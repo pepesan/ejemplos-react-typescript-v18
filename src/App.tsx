@@ -6,6 +6,7 @@ import Sith from "./components/Sith";
 import PropiedadesComponente from "./components/props/PropiedadesComponente";
 import EstadoComponente from "./components/estados/EstadoComponente";
 import MisProps from "./ejercicios/MisProps";
+import EventosComponente from "./components/eventos/EventosComponente";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <EstadoComponente></EstadoComponente>
         <h1>Ejercicios</h1>
         <MisProps name="Pepe" email="p@p.com" age={12} fecha={new Date()}></MisProps>
+        <EventosComponente></EventosComponente>
       </header>
     </div>
   );
