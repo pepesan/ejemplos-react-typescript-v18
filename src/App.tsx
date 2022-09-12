@@ -1,23 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import MiComponente from "./components/MiComponente";
+import Jedi from "./components/Jedi";
+import Sith from "./components/Sith";
+import PropiedadesComponente from "./components/props/PropiedadesComponente";
+import EstadoComponente from "./components/estados/EstadoComponente";
+import MisProps from "./ejercicios/MisProps";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Componente principal</h1>
+        <MiComponente></MiComponente>
+        <Jedi></Jedi>
+        <Sith></Sith>
+        <PropiedadesComponente></PropiedadesComponente>
+        <PropiedadesComponente name="Pepe" email="pepesan@gmail.com" ></PropiedadesComponente>
+        <EstadoComponente></EstadoComponente>
+        <h1>Ejercicios</h1>
+        <MisProps name="Pepe" email="p@p.com" age={12} fecha={new Date()}></MisProps>
       </header>
     </div>
   );
