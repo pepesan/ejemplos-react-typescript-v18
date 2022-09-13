@@ -13,7 +13,7 @@ import FormularioBasicoComponenteCreateRef from "./components/formularios/Formul
 import HookEstadoComponente from "./components/hooks/HookEstadoComponente";
 import CochesComponente from "./components/coches/CochesComponente";
 import LoginFormValidationComponente from "./components/formularios/LoginFormValidationComponente";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import PrimeReactDemo from "./components/prime-react/PrimeReactDemo";
 
 function App() {
   return (
@@ -35,6 +35,7 @@ function App() {
         <HookEstadoComponente></HookEstadoComponente>
         <CochesComponente></CochesComponente>
         <LoginFormValidationComponente></LoginFormValidationComponente>
+        <PrimeReactDemo></PrimeReactDemo>
       </header>
     </div>
   );
