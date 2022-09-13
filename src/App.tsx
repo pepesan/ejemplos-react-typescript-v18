@@ -9,6 +9,7 @@ import MisProps from "./ejercicios/MisProps";
 import EventosComponente from "./components/eventos/EventosComponente";
 import FormularioBasicoComponente from "./components/formularios/FormularioBasicoComponente";
 import FormularioBasicoComponenteCreateRef from "./components/formularios/FormularioBasicoComponenteCreateRef";
+import HookEstadoComponente from "./components/hooks/HookEstadoComponente";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
         <EventosComponente></EventosComponente>
         <FormularioBasicoComponente></FormularioBasicoComponente>
         <FormularioBasicoComponenteCreateRef></FormularioBasicoComponenteCreateRef>
+        <HookEstadoComponente></HookEstadoComponente>
       </header>
     </div>
   );
