@@ -12,6 +12,7 @@ import FormularioBasicoComponente from "./components/formularios/FormularioBasic
 import FormularioBasicoComponenteCreateRef from "./components/formularios/FormularioBasicoComponenteCreateRef";
 import HookEstadoComponente from "./components/hooks/HookEstadoComponente";
 import CochesComponente from "./components/coches/CochesComponente";
+import LoginFormValidationComponente from "./components/formularios/LoginFormValidationComponente";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
         <FormularioBasicoComponenteCreateRef></FormularioBasicoComponenteCreateRef>
         <HookEstadoComponente></HookEstadoComponente>
         <CochesComponente></CochesComponente>
-
+        <LoginFormValidationComponente></LoginFormValidationComponente>
       </header>
     </div>
   );
