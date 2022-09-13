@@ -18,6 +18,7 @@ import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.css';
 import PrimeReactDemo from "./components/prime-react/PrimeReactDemo";
 import InputGroupDemo from "./components/prime-react/InputGroupDemo";
+import PrimeReactFormValidation from "./components/prime-react/PrimeReactFormValidation";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
         <CochesComponente></CochesComponente>
         <LoginFormValidationComponente></LoginFormValidationComponente>
         <PrimeReactDemo></PrimeReactDemo>
-        <InputGroupDemo></InputGroupDemo>
+        <PrimeReactFormValidation></PrimeReactFormValidation>
       </header>
     </div>
   );
