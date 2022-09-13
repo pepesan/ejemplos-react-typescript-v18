@@ -13,7 +13,11 @@ import FormularioBasicoComponenteCreateRef from "./components/formularios/Formul
 import HookEstadoComponente from "./components/hooks/HookEstadoComponente";
 import CochesComponente from "./components/coches/CochesComponente";
 import LoginFormValidationComponente from "./components/formularios/LoginFormValidationComponente";
+import 'primeicons/primeicons.css';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.css';
 import PrimeReactDemo from "./components/prime-react/PrimeReactDemo";
+import InputGroupDemo from "./components/prime-react/InputGroupDemo";
 
 function App() {
   return (
@@ -36,6 +40,7 @@ function App() {
         <CochesComponente></CochesComponente>
         <LoginFormValidationComponente></LoginFormValidationComponente>
         <PrimeReactDemo></PrimeReactDemo>
+        <InputGroupDemo></InputGroupDemo>
       </header>
     </div>
   );
