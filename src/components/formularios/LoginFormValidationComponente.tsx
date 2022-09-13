@@ -21,8 +21,8 @@ class LoginFormValidationComponente extends Component {
                 })}
                 onSubmit={fields => {
                     console.log('SUCCESS!! :-)\n\n' + JSON.stringify(fields, null, 4))
-                }}
-                render={({ errors, status, touched }) => (
+                }}>
+                {({ errors, status, touched }) => (
                     <Form>
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
@@ -41,7 +41,7 @@ class LoginFormValidationComponente extends Component {
                         </div>
                     </Form>
                 )}
-            />
+            </Formik>
         )
     }
 }
