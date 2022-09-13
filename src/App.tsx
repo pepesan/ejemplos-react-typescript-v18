@@ -16,29 +16,35 @@ import LoginFormValidationComponente from "./components/formularios/LoginFormVal
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BotonReactBootstrap from "./components/react-bootstrap/BotonReactBootstrap";
 import AlertasReactBootstrap from "./components/react-bootstrap/AlertasReactBootstrap";
-
+import {Link, Route, Routes} from "react-router-dom";
+import {About, Home, NotFound} from "./components/rutas/Pages";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>Componente principal</h1>
-        <MiComponente></MiComponente>
-        <Jedi></Jedi>
-        <Sith></Sith>
-        <ComponenteSeparado></ComponenteSeparado>
-        <PropiedadesComponente></PropiedadesComponente>
-        <PropiedadesComponente name="Pepe" email="pepesan@gmail.com" ></PropiedadesComponente>
-        <EstadoComponente></EstadoComponente>
-        <h1>Ejercicios</h1>
-        <MisProps name="Pepe" email="p@p.com" age={12} fecha={new Date()}></MisProps>
-        <EventosComponente></EventosComponente>
-        <FormularioBasicoComponente></FormularioBasicoComponente>
-        <FormularioBasicoComponenteCreateRef></FormularioBasicoComponenteCreateRef>
-        <HookEstadoComponente></HookEstadoComponente>
         <CochesComponente></CochesComponente>
-        <LoginFormValidationComponente></LoginFormValidationComponente>
-        <BotonReactBootstrap></BotonReactBootstrap>
-        <AlertasReactBootstrap></AlertasReactBootstrap>
+          <nav
+              style={{
+                  borderBottom: "solid 1px",
+                  paddingBottom: "1rem",
+              }}
+          >
+              <Link to="/">Inicio</Link>|{" "}
+              <Link to="/about">About</Link> |{" "}
+              <Link to="/coches">Coches</Link> |{" "}
+          </nav>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="coches" element={<CochesComponente />} />
+              <Route
+                  path="*"
+                  element={
+                      <NotFound/>
+                  }
+              />
+          </Routes>
       </header>
     </div>
   );
