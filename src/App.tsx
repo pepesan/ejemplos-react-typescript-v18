@@ -19,6 +19,8 @@ import AlertasReactBootstrap from "./components/react-bootstrap/AlertasReactBoot
 import {Link, Route, Routes} from "react-router-dom";
 import {About, Home, NotFound} from "./components/rutas/Pages";
 import Navega from "./components/rutas/Navega";
+import Listado from "./components/rutas/Listado";
+import Detalle from "./components/rutas/Detalle";
 function App() {
   return (
     <div className="App">
@@ -34,12 +36,15 @@ function App() {
               <Link to="/">Inicio</Link>|{" "}
               <Link to="/about">About</Link> |{" "}
               <Link to="/navega">Navega</Link> |{" "}
+              <Link to="/listado">Listado</Link> |{" "}
               <Link to="/coches">Coches</Link> |{" "}
           </nav>
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="about" element={<About />} />
               <Route path="navega" element={<Navega/>} />
+              <Route path="listado" element={<Listado/>} />
+              <Route path="listado/:id" element={<Detalle></Detalle>} />
               <Route path="coches" element={<CochesComponente />} />
               <Route
                   path="*"
