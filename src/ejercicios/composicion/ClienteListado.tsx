@@ -2,6 +2,8 @@ import React from 'react';
 import {Coche} from "../../components/coches/Coche";
 import {Cliente} from "./Cliente";
 import ClienteComponente from "./ClienteComponente";
+import ClienteListadoItem from "./ClienteListadoItem";
+import clienteListadoItem from "./ClienteListadoItem";
 
 interface Props {
     clientes: Cliente[];
@@ -16,7 +18,7 @@ class Clientelistado extends React.Component<Props>{
         return (
             <ul>
                 {this.props.clientes.map(cliente => (
-                    <li>id: {cliente.id}, nombre: {cliente.nombre}, dir: {cliente.dir}, tlf: {cliente.tlf}</li>
+                    <ClienteListadoItem cliente={cliente}></ClienteListadoItem>
                 ))}
             </ul>
         );

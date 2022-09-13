@@ -32,17 +32,7 @@ class ClienteComponente extends React.Component<{}, MiEstadoCliente> {
             ]
         }
     }
-    private handleClienteChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({
-            nuevoCliente: {
-                ...this.state.nuevoCliente,
-                nombre: event.target.value
-            }
-        });
-    };
-    private addCliente = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-
+    private addCliente = (cliente: Cliente) => {
         this.setState(previousState => ({
             nuevoCliente: {
                 id: previousState.nuevoCliente.id + 1,
@@ -50,14 +40,19 @@ class ClienteComponente extends React.Component<{}, MiEstadoCliente> {
                 dir: "",
                 tlf: ""
             },
-            listadoCliente: [...previousState.listadoCliente, previousState.nuevoCliente]
+            listadoCliente: [...previousState.listadoCliente, {
+                id: cliente.id,
+                nombre: cliente.nombre,
+                dir: cliente.dir,
+                tlf: cliente.tlf
+            }]
         }));
     };
     render() {
         return (
             <div>
                 <h2>Gestión de Clientes</h2>
-                <AddCliente nuevoCliente={this.state.nuevoCliente} onAdd={this.addCliente} onChange={this.handleClienteChange}></AddCliente>
+                <AddCliente nuevoCliente={this.state.nuevoCliente} onAdd={this.addCliente}></AddCliente>
                 <Clientelistado clientes={this.state.listadoCliente}></Clientelistado>
             </div>
         );
