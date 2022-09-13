@@ -14,6 +14,10 @@ class  CochesComponente extends Component<any, State>{
             nombre: ""
         },
         coches: [
+            {
+                id: 0,
+                nombre: "Toyota"
+            }
         ]
     };
     render(){
