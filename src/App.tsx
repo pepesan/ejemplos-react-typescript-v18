@@ -21,6 +21,7 @@ import {About, Home, NotFound} from "./components/rutas/Pages";
 import Navega from "./components/rutas/Navega";
 import Listado from "./components/rutas/Listado";
 import Detalle from "./components/rutas/Detalle";
+import ClienteComponente from "./ejercicios/composicion/ClienteComponente";
 function App() {
   return (
     <div className="App">
@@ -53,6 +54,7 @@ function App() {
                   }
               />
           </Routes>
+          <ClienteComponente/>
       </header>
     </div>
   );
