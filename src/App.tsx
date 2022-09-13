@@ -10,6 +10,7 @@ import EventosComponente from "./components/eventos/EventosComponente";
 import FormularioBasicoComponente from "./components/formularios/FormularioBasicoComponente";
 import FormularioBasicoComponenteCreateRef from "./components/formularios/FormularioBasicoComponenteCreateRef";
 import HookEstadoComponente from "./components/hooks/HookEstadoComponente";
+import CochesComponente from "./components/coches/CochesComponente";
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
         <FormularioBasicoComponente></FormularioBasicoComponente>
         <FormularioBasicoComponenteCreateRef></FormularioBasicoComponenteCreateRef>
         <HookEstadoComponente></HookEstadoComponente>
+        <CochesComponente></CochesComponente>
       </header>
     </div>
   );
