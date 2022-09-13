@@ -7,6 +7,8 @@ import PropiedadesComponente from "./components/props/PropiedadesComponente";
 import EstadoComponente from "./components/estados/EstadoComponente";
 import MisProps from "./ejercicios/MisProps";
 import EventosComponente from "./components/eventos/EventosComponente";
+import FormularioBasicoComponente from "./components/formularios/FormularioBasicoComponente";
+import FormularioBasicoComponenteCreateRef from "./components/formularios/FormularioBasicoComponenteCreateRef";
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,8 @@ function App() {
         <h1>Ejercicios</h1>
         <MisProps name="Pepe" email="p@p.com" age={12} fecha={new Date()}></MisProps>
         <EventosComponente></EventosComponente>
+        <FormularioBasicoComponente></FormularioBasicoComponente>
+        <FormularioBasicoComponenteCreateRef></FormularioBasicoComponenteCreateRef>
       </header>
     </div>
   );
