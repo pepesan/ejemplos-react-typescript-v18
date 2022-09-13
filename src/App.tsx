@@ -18,6 +18,7 @@ import BotonReactBootstrap from "./components/react-bootstrap/BotonReactBootstra
 import AlertasReactBootstrap from "./components/react-bootstrap/AlertasReactBootstrap";
 import {Link, Route, Routes} from "react-router-dom";
 import {About, Home, NotFound} from "./components/rutas/Pages";
+import Navega from "./components/rutas/Navega";
 function App() {
   return (
     <div className="App">
@@ -32,11 +33,13 @@ function App() {
           >
               <Link to="/">Inicio</Link>|{" "}
               <Link to="/about">About</Link> |{" "}
+              <Link to="/navega">Navega</Link> |{" "}
               <Link to="/coches">Coches</Link> |{" "}
           </nav>
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="about" element={<About />} />
+              <Route path="navega" element={<Navega/>} />
               <Route path="coches" element={<CochesComponente />} />
               <Route
                   path="*"
