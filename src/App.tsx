@@ -14,6 +14,8 @@ import HookEstadoComponente from "./components/hooks/HookEstadoComponente";
 import CochesComponente from "./components/coches/CochesComponente";
 import LoginFormValidationComponente from "./components/formularios/LoginFormValidationComponente";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BotonReactBootstrap from "./components/react-bootstrap/BotonReactBootstrap";
+import AlertasReactBootstrap from "./components/react-bootstrap/AlertasReactBootstrap";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <HookEstadoComponente></HookEstadoComponente>
         <CochesComponente></CochesComponente>
         <LoginFormValidationComponente></LoginFormValidationComponente>
+        <BotonReactBootstrap></BotonReactBootstrap>
+        <AlertasReactBootstrap></AlertasReactBootstrap>
       </header>
     </div>
   );
