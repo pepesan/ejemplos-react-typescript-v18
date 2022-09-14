@@ -17,7 +17,7 @@ function Navega () {
     return (
             <div>
                 <h2>Navegación programática</h2>
-                <p><button onClick={onclick}>Navega</button> </p>
+                <p><button id="navega-main-button" onClick={onclick}>Navega</button> </p>
             </div>
 
     )
