@@ -46,7 +46,7 @@ class ConnectedForm extends Component<MisProps, Cadena> {
     console.log("clear en form");
     this.setState({ title: "" });
     //console.log(this.props)
-    this.props.clearArticle("");
+    this.props.clearArticle();
   }
   render() {
     const { title } = this.state;

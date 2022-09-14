@@ -11,5 +11,5 @@ export function clearArticle(): MiAccion {
 export interface MisProps {
     articles: string[],
     addArticle: (payload: string) => void
-    clearArticle: (payload: string) => void
+    clearArticle: () => void
 }
