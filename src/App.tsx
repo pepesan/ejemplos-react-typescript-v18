@@ -23,12 +23,12 @@ import Listado from "./components/rutas/Listado";
 import Detalle from "./components/rutas/Detalle";
 import ClienteComponente from "./ejercicios/composicion/ClienteComponente";
 import PeticionesWeb from "./components/httprequest/PeticionesWeb";
+import ReduxAPP from "./components/redux/ReduxApp";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>Componente principal</h1>
-        <CochesComponente></CochesComponente>
           <nav
               style={{
                   borderBottom: "solid 1px",
@@ -42,6 +42,7 @@ function App() {
               <Link to="/coches">Coches</Link> |{" "}
               <Link to="/clientes">Clientes</Link> |{" "}
               <Link to="/httprequest">HttpRequest</Link> |{" "}
+              <Link to="/redux">Redux</Link> |{" "}
           </nav>
           <Routes>
               <Route path="/" element={<Home />} />
@@ -52,6 +53,7 @@ function App() {
               <Route path="coches" element={<CochesComponente />} />
               <Route path="clientes" element={<ClienteComponente/>} />
               <Route path="httprequest" element={<PeticionesWeb />} />
+              <Route path="redux" element={<ReduxAPP />} />
               <Route
                   path="*"
                   element={
