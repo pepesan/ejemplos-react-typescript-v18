@@ -8,7 +8,6 @@ function App() {
       <header className="App-header">
         <h1>Componente principal</h1>
           <AppRoutes></AppRoutes>
-
       </header>
     </div>
   );
