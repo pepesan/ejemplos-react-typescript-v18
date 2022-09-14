@@ -5,10 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom/client';
 import {
     BrowserRouter,
-    Routes,
-    Route,
 } from "react-router-dom";
-import {Home} from "./components/rutas/Pages";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
