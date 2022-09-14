@@ -13,3 +13,4 @@ export interface MiAccion {
 }
 // definición de un tipo de acción
 export const ADD_ARTICLE = "ADD_ARTICLE";
+export const CLEAR_ARTICLE = "CLEAR_ARTICLE";

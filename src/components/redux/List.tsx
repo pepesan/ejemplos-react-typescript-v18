@@ -3,13 +3,14 @@ import React, {Component} from "react";
 import { connect } from "react-redux";
 import {GlobalState} from "./GlobalState";
 // importa la acción a realizar
-import {addArticle, MisProps} from "./action";
+import {addArticle, clearArticle, MisProps} from "./action";
 
 // mapea a props el estado
 const mapStateToProps = (state: GlobalState) => {
   return {
     articles: state.articles,
-    addArticle: addArticle
+    addArticle: addArticle,
+    clearArticle: clearArticle
   };
 };
 
@@ -19,7 +20,7 @@ class ConnectedList extends Component<MisProps>{
     return (
       <ul>
         {this.props.articles.map(el => (
-          <li >{el}</li>
+          <li key={el+"1"}>{el}</li>
         ))}
       </ul>
     );
