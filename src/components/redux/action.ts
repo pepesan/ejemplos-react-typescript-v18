@@ -1,3 +1,5 @@
+// Paso 6: Define las acciones realizables y las Props
+
 import {ADD_ARTICLE, MiAccion} from "./GlobalState";
 
 export function addArticle(payload: string): MiAccion {
