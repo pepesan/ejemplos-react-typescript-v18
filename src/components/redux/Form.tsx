@@ -1,15 +1,16 @@
 // Paso 8: Componente de Formulario
-import React, {ChangeEvent, Component, EventHandler, FormEvent, FormEventHandler} from "react";
+import React, {ChangeEvent, Component, FormEvent} from "react";
 import { connect } from "react-redux";
 // importa el dispatcher (pasa llamar a los métodos del store)
 import {Dispatch} from "redux";
 // importa las acciones
-import {addArticle, MisProps} from "./action";
+import {addArticle, clearArticle, MisProps} from "./action";
 
 // función que mapea el dispatch a props
 function mapDispatchToProps(dispatch: Dispatch) {
   return {
     addArticle: (article: string) => dispatch(addArticle(article)),
+    clearArticle: () => dispatch(clearArticle()),
     articles: []
   };
 }
@@ -26,6 +27,8 @@ class ConnectedForm extends Component<MisProps, Cadena> {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.clearList = this.clearList.bind(this);
+
   }
 
   handleChange(event: ChangeEvent<HTMLInputElement>) {
@@ -37,6 +40,13 @@ class ConnectedForm extends Component<MisProps, Cadena> {
     // uso de la prop para enviar los datos al estado
     this.props.addArticle(this.state.title);
     this.setState({ title: "" });
+  }
+  clearList(event: FormEvent<HTMLButtonElement>) {
+    event.preventDefault();
+    console.log("clear en form");
+    this.setState({ title: "" });
+    //console.log(this.props)
+    this.props.clearArticle("");
   }
   render() {
     const { title } = this.state;
@@ -52,9 +62,12 @@ class ConnectedForm extends Component<MisProps, Cadena> {
           />
         </div>
         <button type="submit">SAVE</button>
+        <button onClick={this.clearList}>Clear List</button>
       </form>
     );
   }
+
+
 }
 
 // Conexión del Componente con la función de Mapeo
