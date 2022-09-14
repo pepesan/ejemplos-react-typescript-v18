@@ -22,6 +22,7 @@ import Navega from "./components/rutas/Navega";
 import Listado from "./components/rutas/Listado";
 import Detalle from "./components/rutas/Detalle";
 import ClienteComponente from "./ejercicios/composicion/ClienteComponente";
+import PeticionesWeb from "./components/httprequest/PeticionesWeb";
 function App() {
   return (
     <div className="App">
@@ -39,6 +40,8 @@ function App() {
               <Link to="/navega">Navega</Link> |{" "}
               <Link to="/listado">Listado</Link> |{" "}
               <Link to="/coches">Coches</Link> |{" "}
+              <Link to="/clientes">Clientes</Link> |{" "}
+              <Link to="/httprequest">HttpRequest</Link> |{" "}
           </nav>
           <Routes>
               <Route path="/" element={<Home />} />
@@ -47,6 +50,8 @@ function App() {
               <Route path="listado" element={<Listado/>} />
               <Route path="listado/:id" element={<Detalle></Detalle>} />
               <Route path="coches" element={<CochesComponente />} />
+              <Route path="clientes" element={<ClienteComponente/>} />
+              <Route path="httprequest" element={<PeticionesWeb />} />
               <Route
                   path="*"
                   element={
@@ -54,7 +59,7 @@ function App() {
                   }
               />
           </Routes>
-          <ClienteComponente/>
+
       </header>
     </div>
   );
