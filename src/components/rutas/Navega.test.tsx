@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent, render, screen} from '@testing-library/react'
+import {fireEvent, render, screen, waitFor} from '@testing-library/react'
 import '@testing-library/jest-dom'
 import {BrowserRouter, MemoryRouter} from 'react-router-dom'
 import Navega from "./Navega";
@@ -18,5 +18,9 @@ test('Navega render', async () => {
     const navegaButton = screen.getByText("Navega");
     expect(navegaButton).toBeInTheDocument()
     fireEvent.click(navegaButton)
-    //expect(screen.getByText(/Home Page/i)).toBeInTheDocument()
+    await waitFor(() => {
+        expect(screen.findByText('Home Page')).toBeTruthy();
+    });
+
+
 })
