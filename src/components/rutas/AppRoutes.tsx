@@ -9,6 +9,7 @@ import ClienteComponente from "../../ejercicios/composicion/ClienteComponente";
 import PeticionesWeb from "../httprequest/PeticionesWeb";
 import ReduxAPP from "../redux/ReduxApp";
 import Menu from "./Menu";
+import MiContenedor from "../context/MiContenedor";
 
 class AppRoutes extends React.Component {
     render() {
@@ -26,6 +27,7 @@ class AppRoutes extends React.Component {
                         <Route path="clientes" element={<ClienteComponente/>} />
                         <Route path="httprequest" element={<PeticionesWeb />} />
                         <Route path="redux" element={<ReduxAPP />} />
+                        <Route path="contexto" element={<MiContenedor />} />
                         <Route
                             path="*"
                             element={
