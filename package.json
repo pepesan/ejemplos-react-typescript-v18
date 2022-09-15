@@ -53,6 +53,7 @@
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/yup": "^0.32.0",
+    "cypress": "^10.8.0",
     "eslint": "^8.23.1",
     "redux-devtools": "^3.7.0"
   }

@@ -21,6 +21,4 @@ test('Navega render', async () => {
     await waitFor(() => {
         expect(screen.findByText('Home Page')).toBeTruthy();
     });
-
-
 })

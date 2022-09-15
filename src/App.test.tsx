@@ -7,7 +7,8 @@ import App from './App';
 test('full app rendering/navigating', async () => {
   render(<App />, {wrapper: BrowserRouter})
   // verify page content for default route
-  expect(screen.getByText(/Componente principal/i)).toBeInTheDocument()
+  const pantalla = screen.getByText(/Componente principal/i)
+  expect(pantalla).toBeInTheDocument()
 })
 
 
