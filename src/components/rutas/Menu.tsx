@@ -18,6 +18,7 @@ class Menu extends React.Component {
                 <Link to="/clientes">Clientes</Link> |{" "}
                 <Link to="/httprequest">HttpRequest</Link> |{" "}
                 <Link to="/redux">Redux</Link> |{" "}
+                <Link to="/contexto">Contexto</Link> |{" "}
             </nav>
         );
     }
