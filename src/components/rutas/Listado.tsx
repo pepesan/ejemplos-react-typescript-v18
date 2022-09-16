@@ -14,10 +14,10 @@ class  Listado extends Component<any, MiListado>{
         return (
             <div id="Listado">
                 <h2>Listado</h2>
-                <ul>
+                <ul id="list-element">
 
                     {this.state.listado.map(item => (
-                        <li key={item}>
+                        <li className="list-item" key={item}>
 
                             <Link to={{
                                 pathname: "/listado/"+item

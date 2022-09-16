@@ -10,7 +10,7 @@ function Navega () {
     let params = useParams();
 
     function onclick() {
-        console.log("navega");
+        // console.log("navega");
         navigate("/");
     }
 
