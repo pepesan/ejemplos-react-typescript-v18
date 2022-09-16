@@ -13,10 +13,10 @@ class FormularioBasicoComponenteCreateRef extends Component<any, any>{
 
     handleChange(event: FormEvent) {
         //const name = (this.refs['name'] as any as HTMLInputElement).value.trim();
-        console.log(event.target);
+        // console.log(event.target);
         const miTarget= event.target as HTMLInputElement;
-        console.log(miTarget.value);
-        console.log(this.myRef);
+        // console.log(miTarget.value);
+        // console.log(this.myRef);
         this.setState({value: (this.myRef.current as HTMLInputElement).value});
         //this.setState({value: miTarget.value});
     }
@@ -34,7 +34,9 @@ class FormularioBasicoComponenteCreateRef extends Component<any, any>{
                     <label>
                         Name:
                         <input
+                            id="value-input"
                             type="text"
+                            className="text-input"
                             value={this.state.value}
                             ref={this.myRef}
                             onChange={this.handleChange}
@@ -43,7 +45,7 @@ class FormularioBasicoComponenteCreateRef extends Component<any, any>{
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
-                <label>{this.state.value}</label>
+                <label className="text-label">{this.state.value}</label>
             </div>
         )
     }

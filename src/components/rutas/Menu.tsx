@@ -19,6 +19,8 @@ class Menu extends React.Component {
                 <Link to="/httprequest">HttpRequest</Link> |{" "}
                 <Link to="/redux">Redux</Link> |{" "}
                 <Link to="/contexto">Contexto</Link> |{" "}
+                <Link to="/formcreateref">Formulario</Link> |{" "}
+
             </nav>
         );
     }

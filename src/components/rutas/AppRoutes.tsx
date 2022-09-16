@@ -10,6 +10,7 @@ import PeticionesWeb from "../httprequest/PeticionesWeb";
 import ReduxAPP from "../redux/ReduxApp";
 import Menu from "./Menu";
 import MiContenedor from "../context/MiContenedor";
+import FormularioBasicoComponenteCreateRef from "../formularios/FormularioBasicoComponenteCreateRef";
 
 class AppRoutes extends React.Component {
     render() {
@@ -28,6 +29,7 @@ class AppRoutes extends React.Component {
                         <Route path="httprequest" element={<PeticionesWeb />} />
                         <Route path="redux" element={<ReduxAPP />} />
                         <Route path="contexto" element={<MiContenedor />} />
+                        <Route path="formcreateref" element={<FormularioBasicoComponenteCreateRef />} />
                         <Route
                             path="*"
                             element={
