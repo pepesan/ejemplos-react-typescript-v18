@@ -13,6 +13,7 @@ import MiContenedor from "../context/MiContenedor";
 import FormularioBasicoComponenteCreateRef from "../formularios/FormularioBasicoComponenteCreateRef";
 import HookEstadoComponente from "../hooks/HookEstadoComponente";
 import HookEffect from "../hooks/HookEffect";
+import CicloDeVida from "../ciclosdevida/CicloDeVida";
 
 class AppRoutes extends React.Component {
     render() {
@@ -26,6 +27,7 @@ class AppRoutes extends React.Component {
                         <Route path="navega" element={<Navega/>} />
                         <Route path="listado" element={<Listado/>} />
                         <Route path="listado/:id" element={<Detalle></Detalle>} />
+                        <Route path="ciclodevida" element={<CicloDeVida />} />
                         <Route path="usestate" element={<HookEstadoComponente />} />
                         <Route path="useeffect" element={<HookEffect />} />
                         <Route path="coches" element={<CochesComponente />} />
