@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function HookEstadoComponente() {
+function HookEstadoComponenteV2() {
 // Declara una nueva variable de estado, que llamaremos "count".
     const [count, setCount] = useState(0);
     const [valor, setValor] = useState("Hola");
@@ -17,4 +17,4 @@ function HookEstadoComponente() {
         </div>
     );
 }
-export default HookEstadoComponente;
+export default HookEstadoComponenteV2;

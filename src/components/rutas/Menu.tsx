@@ -14,6 +14,8 @@ class Menu extends React.Component {
                 <Link to="/about">About</Link> |{" "}
                 <Link to="/navega">Navega</Link> |{" "}
                 <Link to="/listado">Listado</Link> |{" "}
+                <Link to="/usestate">useState</Link> |{" "}
+                <Link to="/useeffect">useEffect</Link> |{" "}
                 <Link to="/coches">Coches</Link> |{" "}
                 <Link to="/clientes">Clientes</Link> |{" "}
                 <Link to="/httprequest">HttpRequest</Link> |{" "}
