@@ -1,12 +1,12 @@
-import "./Sith.css";
+import "./ComponenteFuncion.css";
 // componente de tipo Function Component
-function Sith (){
+function ComponenteFuncion (){
     // devuelve el valor de la plantilla
     return(
         <div>
-            <p className="sith-box"> I'm Bad, you know!</p>
+            <h2>Componente Funcion</h2>
         </div>
     )
 }
 // exportar el componenter para pueda ser cargado
-export default Sith;
+export default ComponenteFuncion;

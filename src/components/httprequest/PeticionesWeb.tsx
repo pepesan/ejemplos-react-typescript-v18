@@ -51,7 +51,7 @@ class  PeticionesWeb extends Component<any,IState>{
     }
     // necesitamos definirlo de esta manera para que no falle
     recarga = () =>{
-        axios.get(`https://cursosdedesarrollo.com/pactometro/resultados.json`)
+        axios.get(`https://pactometro.cursosdedesarrollo.com/resultados.json`)
             .then(res => {
                 const persons: Partido[] = res.data;
                 console.log(persons);
