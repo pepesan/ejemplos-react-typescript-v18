@@ -8,8 +8,8 @@ interface Props {
 
 class PropiedadesComponente extends Component<Props>{
     static defaultProps = { // Definimos los valores por defecto
-        name: "",
-        email: "",
+        name: "nombre",
+        email: "p@p.com",
         age : 2
     };
     render(): React.ReactElement{ // TS
