@@ -12,7 +12,8 @@ class  ShowPartido extends Component<IPartido>{
         return (
             <tr key={partido.nombre}>
                 {/* eslint-disable-next-line jsx-a11y/scope */}
-                <td  scope="row">{partido.nombre}</td> <td>{partido.dipu} escaños</td>
+                <td  scope="row">{partido.nombre}</td>
+                <td>{partido.dipu} escaños</td>
                 <td><img src={imgurl} alt={alt}/></td>
             </tr>
 
